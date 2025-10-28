@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amphitrite Technologies - Water Treatment Solutions</title>
+    <meta name="description" content="Leading water treatment solutions provider in India. STP, ETP, and RO systems with 15+ years of excellence.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Navigation -->
+    <header id="navigation" class="header">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#hero" class="logo-link">
+                    <div class="logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Amphitrite</span>
+                        <p class="logo-subtitle">Technologies</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#office" class="nav-link">Contact</a>
+                    <a href="#lead-form" class="btn btn-primary btn-sm">Request Free Consultation</a>
+                </nav>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                    <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-content">
+                <a href="#services" class="mobile-nav-link">Services</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#about" class="mobile-nav-link">About Us</a>
+                <a href="#office" class="mobile-nav-link">Contact</a>
+                <a href="#lead-form" class="btn btn-primary btn-lg mobile-cta">Request Free Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-background">
+            <img src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/26392af0-dc78-46b2-9569-92fc261d6e22-wink-shade-59488103-figma-site/assets/images/images_1.jpg" alt="Industrial water treatment plant">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.583a.5.5 0 0 1 0 .962L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+                        </svg>
+                        <span>15+ Years of Excellence</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Recycle Water and Wastewater Treatment to
+                        <span class="text-gradient">Reduce Costs</span>
+                        &
+                        <span class="text-gradient">Stay Compliant</span>
+                    </h1>
+
+                    <div class="hero-services">
+                        <h2 class="services-title">End-to-end Setup For</h2>
+                        <ul class="services-list">
+                            <li class="service-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                <span>Sewage Treatment Plant (STP)</span>
+                            </li>
+                            <li class="service-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                <span>Effluent Treatment Plant (ETP)</span>
+                            </li>
+                            <li class="service-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                <span>Reverse Osmosis (RO) Water</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p class="hero-description">
+                        Design, Installation, and Maintenance for industries across India.
+                    </p>
+
+                    <button class="btn btn-white btn-lg" id="explore-solutions-btn">
+                        Explore Our Solutions
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hero-right">
+                    <div class="consultation-card" id="lead-form">
+                        <div class="card-header">
+                            <h3 class="card-title">Request Free Consultation</h3>
+                            <p class="card-subtitle">Get expert advice tailored to your needs</p>
+                        </div>
+                        <form class="consultation-form" id="consultation-form">
+                            <div class="form-group">
+                                <label for="name">Name: *</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone: *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name:</label>
+                                <input type="text" id="company" name="company" placeholder="Enter your company name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email id: *</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Need: *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select service required</option>
+                                    <option value="stp">Sewage Treatment Plant (STP)</option>
+                                    <option value="etp">Effluent Treatment Plant (ETP)</option>
+                                    <option value="ro">Reverse Osmosis (RO) Water</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Get Consultation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section class="video-showcase-section">
+        <div class="floating-gradients">
+            <div class="gradient-circle gradient-circle-1"></div>
+            <div class="gradient-circle gradient-circle-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    See Our <span class="text-gradient">Solutions</span> in Action
+                </h2>
+                <p class="section-subtitle">
+                    Watch how we transform wastewater into clean, reusable water for industries across India
+                </p>
+            </div>
+
+            <div class="video-card">
+                <div class="video-player">
+                    <img src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/26392af0-dc78-46b2-9569-92fc261d6e22-wink-shade-59488103-figma-site/assets/images/images_2.jpg" alt="Water Treatment Plant Video" class="video-thumbnail">
+                    <div class="video-overlay"></div>
+                    <button class="play-button">
+                        <div class="play-button-pulse"></div>
+                        <div class="play-button-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="white">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="video-duration">3:45</div>
+                </div>
+
+                <div class="video-info">
+                    <h3>Complete Water Treatment Process</h3>
+                    <p>From raw wastewater to clean, reusable water - see our end-to-end solutions</p>
+                </div>
+            </div>
+
+            <div class="feature-badges">
+                <div class="badge">100% PCB Compliant</div>
+                <div class="badge">Save Up to 70% Water</div>
+                <div class="badge">Reduce Operating Costs</div>
+                <div class="badge">Expert Installation</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats & Industries Section -->
+    <section id="about" class="stats-industries-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trusted by Leading Industries Across India</h2>
+                <div class="decorative-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-circle"></div>
+                    <div class="divider-line"></div>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-value">15+</h3>
+                    <p class="stat-label">Years of Expertise</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-value">200+</h3>
+                    <p class="stat-label">Installations</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-value">100%</h3>
+                    <p class="stat-label">PCB Compliance</p>
+                </div>
+            </div>
+
+            <div class="industries-section">
+                <h3 class="industries-title">Industries Served:</h3>
+                <div class="industries-grid" id="industries-grid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="services" class="why-choose-section">
+        <div class="floating-gradients">
+            <div class="gradient-circle gradient-circle-3"></div>
+            <div class="gradient-circle gradient-circle-4"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Industries Choose Our STP & ETP Solutions</h2>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon benefit-icon-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Save Costs</h3>
+                    <p class="benefit-description">Recycle up to 80% of wastewater and cut down fresh water expenses.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon benefit-icon-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Stay Compliance</h3>
+                    <p class="benefit-description">Meet Pollution Control Board and Government regulations with ease.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon benefit-icon-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Solutions</h3>
+                    <p class="benefit-description">Structured plant design for your industry, capacity, and budget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proven Results Section -->
+    <section class="proven-results-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title section-title-dark">Proven Results from Our Installations</h2>
+                <p class="section-subtitle section-subtitle-dark">
+                    Our solutions deliver tangible benefits, helping industries save costs, conserve resources, and meet regulatory standards effectively.
+                </p>
+            </div>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-value">80%</div>
+                    <h4 class="result-label">Reduced freshwater consumption</h4>
+                </div>
+                <div class="result-card">
+                    <div class="result-value">₹15L+</div>
+                    <h4 class="result-label">Saved annually through recycling</h4>
+                </div>
+                <div class="result-card">
+                    <div class="result-value">100%</div>
+                    <h4 class="result-label">PCB compliance achieved</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Gallery Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Projects Gallery</h2>
+                <p class="section-subtitle">
+                    See our successful installations across various industries. Each project demonstrates our commitment to quality and regulatory compliance.
+                </p>
+            </div>
+
+            <div class="projects-grid" id="projects-grid"></div>
+        </div>
+    </section>
+
+    <!-- Why Partner Section -->
+    <section id="whyus" class="why-partner-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Partner With Amphitrite?</h2>
+                <p class="section-subtitle">
+                    Our commitment to quality, compliance, and customer satisfaction sets us apart
+                </p>
+            </div>
+
+            <div class="partner-grid">
+                <div class="partner-card">
+                    <div class="partner-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="partner-title">Govt & PCB Approved Designs</h3>
+                    <p class="partner-description">
+                        Our designs strictly adhere to all government and Pollution Control Board guidelines, ensuring your operations are fully compliant.
+                    </p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3 class="partner-title">Turnkey Installation & AMC Support</h3>
+                    <p class="partner-description">
+                        We manage everything from initial setup to ongoing maintenance, providing you with hassle-free operation and peace of mind.
+                    </p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="partner-title">200+ Industrial Clients Served</h3>
+                    <p class="partner-description">
+                        Join a growing list of satisfied partners across various industries who trust our expertise and reliable solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title section-title-dark">Our Team</h2>
+                <p class="section-subtitle section-subtitle-dark">
+                    Meet the experts behind our successful installations
+                </p>
+            </div>
+
+            <div class="team-grid" id="team-grid"></div>
+        </div>
+    </section>
+
+    <!-- Clients Logos Section -->
+    <section id="clients" class="clients-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Clients</h2>
+                <p class="section-subtitle">
+                    Trusted by leading companies across industries
+                </p>
+            </div>
+
+            <div class="clients-grid" id="clients-grid"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Real reviews from our satisfied clients</p>
+            </div>
+
+            <div class="testimonials-carousel">
+                <button class="carousel-btn carousel-prev" id="testimonials-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"/>
+                    </svg>
+                </button>
+                
+                <div class="testimonials-track" id="testimonials-track"></div>
+
+                <button class="carousel-btn carousel-next" id="testimonials-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title section-title-dark">Frequently Asked Questions</h2>
+                <p class="section-subtitle section-subtitle-dark">
+                    Get answers to common questions about our water treatment solutions
+                </p>
+            </div>
+
+            <div class="faq-accordion" id="faq-accordion"></div>
+
+            <div class="faq-cta">
+                <p class="faq-cta-text">Still have questions? We're here to help!</p>
+                <a href="#office" class="btn btn-primary btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner Section -->
+    <section class="cta-banner-section">
+        <div class="cta-background"></div>
+        
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Save Environment by Treating Water!</h2>
+                <p class="cta-subtitle">
+                    Get all your water treatment needs fulfilled by Amphitrite Technologies
+                </p>
+
+                <div class="cta-stats">
+                    <div class="cta-stat">
+                        <div class="cta-stat-number">15+ Years</div>
+                        <div class="cta-stat-label">Industry Experience</div>
+                    </div>
+                    <div class="cta-stat">
+                        <div class="cta-stat-number">200+</div>
+                        <div class="cta-stat-label">Projects Completed</div>
+                    </div>
+                    <div class="cta-stat">
+                        <div class="cta-stat-number">100%</div>
+                        <div class="cta-stat-label">PCB Compliance</div>
+                    </div>
+                </div>
+
+                <a href="#lead-form" class="btn btn-white btn-lg cta-button">Request Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="office" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Office</h2>
+                <p class="section-subtitle">
+                    Visit us at our Chennai location or get in touch to schedule a consultation
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="contact-title">Our Address</h3>
+                                <p class="contact-text">
+                                    No 1-4, Abirami Homes,<br>
+                                    Bhuvaneshwari Nagar,<br>
+                                    1st Cross Street, Velachery,<br>
+                                    Chennai – 600 042
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="contact-title">Phone Number</h3>
+                                <a href="tel:+919876543210" class="contact-link">+91 98765 43210</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="contact-title">Email Address</h3>
+                                <a href="mailto:contact@amphitrite.com" class="contact-link">contact@amphitrite.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="contact-title">Business Hours</h3>
+                                <p class="contact-text">
+                                    Mon - Sat: 9:00 AM - 6:00 PM<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.327899738093!2d80.2201386153648!3d12.999999890833188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d8b8e8f8f8d%3A0x8b8b8b8b8b8b8b8b!2sVelachery%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1678886400000!5m2!1sen!2sin"
+                            allowfullscreen
+                            loading="lazy"
+                            title="Office Location Map"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <div class="logo-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                            </svg>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Amphitrite</span>
+                            <p class="logo-subtitle">Technologies</p>
+                        </div>
+                    </a>
+                    <p class="footer-description">
+                        Pioneering sustainable water treatment solutions across India. Excellence in STP, ETP, and RO systems for over 15 years.
+                    </p>
+                    <p class="footer-quote">"Clean Water, Sustainable Future"</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#office">Contact</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="footer-contact">
+                        <p>No 1-4, Abirami Homes, Bhuvaneshwari Nagar, Velachery, Chennai – 600 042</p>
+                        <p><a href="tel:+919876543210">+91 987 654 3210</a></p>
+                        <p><a href="mailto:info@amphitritetech.com">info@amphitritetech.com</a></p>
+                    </div>
+                    <div class="footer-social">
+                        <p class="social-label">Follow Us:</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect width="4" height="12" x="2" y="9"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Get Started -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Get Started</h4>
+                    <h5 class="footer-form-title">Request Free Consultation</h5>
+                    <p class="footer-form-description">
+                        Get expert advice on water treatment solutions tailored to your needs.
+                    </p>
+                    <form class="footer-form" id="footer-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Amphitrite Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
