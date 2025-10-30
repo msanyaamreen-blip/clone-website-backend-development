@@ -14,27 +14,27 @@ const teamMembers: TeamMember[] = [
   {
     name: 'Dr. Rajesh Kumar',
     title: 'Founder & Chief Engineer',
-    imageSrc: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/26392af0-dc78-46b2-9569-92fc261d6e22-wink-shade-59488103-figma-site/assets/images/images_9.jpg',
+    imageSrc: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/26392af0-dc78-46b2-9569-92fc261d6e22/generated_images/professional-indian-male-engineer-in-his-3a8e8a0a-20251030135413.jpg',
   },
   {
     name: 'Priya Sharma',
     title: 'Senior Project Manager',
-    imageSrc: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/26392af0-dc78-46b2-9569-92fc261d6e22-wink-shade-59488103-figma-site/assets/images/images_10.jpg',
+    imageSrc: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/26392af0-dc78-46b2-9569-92fc261d6e22/generated_images/professional-indian-female-project-manag-87e661f8-20251030135414.jpg',
   },
   {
     name: 'Amit Patel',
     title: 'Technical Head - ETP',
-    imageSrc: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/26392af0-dc78-46b2-9569-92fc261d6e22-wink-shade-59488103-figma-site/assets/images/images_11.jpg',
+    imageSrc: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/26392af0-dc78-46b2-9569-92fc261d6e22/generated_images/professional-indian-male-technical-engin-e530f3fc-20251030135415.jpg',
   },
   {
     name: 'Kavita Desai',
     title: 'Environmental Compliance Officer',
-    imageSrc: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/26392af0-dc78-46b2-9569-92fc261d6e22-wink-shade-59488103-figma-site/assets/images/images_12.jpg',
+    imageSrc: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/26392af0-dc78-46b2-9569-92fc261d6e22/generated_images/professional-indian-female-compliance-of-50ab12e6-20251030135410.jpg',
   },
   {
     name: 'Suresh Nair',
     title: 'Operations Manager',
-    imageSrc: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/26392af0-dc78-46b2-9569-92fc261d6e22-wink-shade-59488103-figma-site/assets/images/images_13.jpg',
+    imageSrc: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/26392af0-dc78-46b2-9569-92fc261d6e22/generated_images/professional-indian-male-operations-mana-1c86c9c7-20251030135410.jpg',
   },
 ];
 

@@ -1,4 +1,5 @@
 import type { LucideProps } from "lucide-react";
+import Image from "next/image";
 import {
   Factory,
   TestTube2,
@@ -26,14 +27,28 @@ const StatCard = ({ value, label }: StatCardProps) => (
 type IndustryCardProps = {
   name: string;
   icon: React.ComponentType<LucideProps>;
+  description: string;
+  imageSrc: string;
 };
 
-const IndustryCard = ({ name, icon: Icon }: IndustryCardProps) => (
-  <div className="group flex h-full flex-col items-center justify-center rounded-2xl border border-border bg-card p-8 text-center text-card-foreground shadow-lg transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl">
-    <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">
-      <Icon className="h-8 w-8 text-primary" />
+const IndustryCard = ({ name, icon: Icon, description, imageSrc }: IndustryCardProps) => (
+  <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-lg transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl">
+    <div className="relative h-48 w-full overflow-hidden">
+      <Image
+        src={imageSrc}
+        alt={`${name} water treatment facility`}
+        fill
+        className="object-cover transition-transform duration-500 group-hover:scale-110"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+      <div className="absolute bottom-4 left-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/90 backdrop-blur-sm">
+        <Icon className="h-6 w-6 text-white" />
+      </div>
     </div>
-    <h4 className="text-xl font-semibold">{name}</h4>
+    <div className="flex flex-col p-6 text-card-foreground">
+      <h4 className="mb-2 text-xl font-semibold">{name}</h4>
+      <p className="text-sm text-slate-600">{description}</p>
+    </div>
   </div>
 );
 
@@ -45,15 +60,60 @@ const StatsIndustries = () => {
   ];
 
   const industries = [
-    { name: "Manufacturing", icon: Factory },
-    { name: "Pharma", icon: TestTube2 },
-    { name: "Textiles", icon: Shirt },
-    { name: "Food Processing", icon: CookingPot },
-    { name: "Chemicals", icon: FlaskConical },
-    { name: "Tannery", icon: Layers },
-    { name: "Schools", icon: School },
-    { name: "Colleges", icon: GraduationCap },
-    { name: "Large Hotels", icon: Building2 },
+    { 
+      name: "Manufacturing", 
+      icon: Factory,
+      description: "Custom STP & ETP solutions for manufacturing units with high water consumption and complex effluent requirements.",
+      imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/26392af0-dc78-46b2-9569-92fc261d6e22/generated_images/modern-manufacturing-facility-with-indus-6309127e-20251030135423.jpg"
+    },
+    { 
+      name: "Pharma", 
+      icon: TestTube2,
+      description: "Specialized treatment systems meeting stringent pharmaceutical industry standards and regulatory compliance.",
+      imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/26392af0-dc78-46b2-9569-92fc261d6e22/generated_images/pharmaceutical-manufacturing-facility-cl-e74a0d46-20251030135413.jpg"
+    },
+    { 
+      name: "Textiles", 
+      icon: Shirt,
+      description: "Advanced color removal and chemical treatment for textile dyeing and processing facilities.",
+      imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/26392af0-dc78-46b2-9569-92fc261d6e22/generated_images/textile-dyeing-factory-interior-large-in-41119399-20251030135412.jpg"
+    },
+    { 
+      name: "Food Processing", 
+      icon: CookingPot,
+      description: "Hygienic wastewater treatment for food and beverage processing plants with organic load management.",
+      imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/26392af0-dc78-46b2-9569-92fc261d6e22/generated_images/food-processing-plant-interior-stainless-697967f0-20251030135415.jpg"
+    },
+    { 
+      name: "Chemicals", 
+      icon: FlaskConical,
+      description: "Heavy-duty treatment systems for chemical plants handling toxic and hazardous wastewater.",
+      imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/26392af0-dc78-46b2-9569-92fc261d6e22/generated_images/chemical-plant-facility-with-large-indus-b684f06b-20251030135412.jpg"
+    },
+    { 
+      name: "Tannery", 
+      icon: Layers,
+      description: "Specialized chrome recovery and tannery effluent treatment with zero liquid discharge options.",
+      imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/26392af0-dc78-46b2-9569-92fc261d6e22/generated_images/leather-tannery-facility-large-tanning-d-060173a5-20251030135418.jpg"
+    },
+    { 
+      name: "Schools", 
+      icon: School,
+      description: "Compact and efficient STP systems for educational institutions with consistent daily loads.",
+      imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/26392af0-dc78-46b2-9569-92fc261d6e22/generated_images/modern-school-building-exterior-with-gre-d49e5e8f-20251030135413.jpg"
+    },
+    { 
+      name: "Colleges", 
+      icon: GraduationCap,
+      description: "Scalable water treatment solutions for large educational campuses and hostel facilities.",
+      imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/26392af0-dc78-46b2-9569-92fc261d6e22/generated_images/large-college-campus-with-modern-buildin-ee2b2b61-20251030135418.jpg"
+    },
+    { 
+      name: "Large Hotels", 
+      icon: Building2,
+      description: "Premium STP and water recycling systems for hospitality sector with automated monitoring.",
+      imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/26392af0-dc78-46b2-9569-92fc261d6e22/generated_images/luxury-five-star-hotel-building-exterior-bdd1b0f9-20251030135413.jpg"
+    },
   ];
 
   return (
@@ -80,7 +140,13 @@ const StatsIndustries = () => {
           <h3 className="mb-12 text-3xl font-semibold text-white">Industries Served:</h3>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {industries.map((industry, index) => (
-              <IndustryCard key={index} name={industry.name} icon={industry.icon} />
+              <IndustryCard 
+                key={index} 
+                name={industry.name} 
+                icon={industry.icon}
+                description={industry.description}
+                imageSrc={industry.imageSrc}
+              />
             ))}
           </div>
         </div>
