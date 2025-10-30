@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 
 const CtaBanner = () => {
@@ -6,6 +8,13 @@ const CtaBanner = () => {
     { number: '200+', label: 'Projects Completed' },
     { number: '100%', label: 'PCB Compliance' },
   ];
+
+  const handleConsultationClick = () => {
+    const leadForm = document.getElementById('lead-form');
+    if (leadForm) {
+      leadForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
 
   return (
     <section className="relative overflow-hidden py-24 sm:py-32">
@@ -50,7 +59,10 @@ const CtaBanner = () => {
           </div>
 
           <div className="mt-16">
-            <button className="transform rounded-lg bg-white px-10 py-4 text-lg font-semibold text-[#1e3a5f] shadow-xl transition-transform duration-300 hover:scale-105">
+            <button 
+              onClick={handleConsultationClick}
+              className="transform rounded-lg bg-white px-10 py-4 text-lg font-semibold text-[#1e3a5f] shadow-xl transition-transform duration-300 hover:scale-105"
+            >
               Request Free Consultation
             </button>
           </div>
