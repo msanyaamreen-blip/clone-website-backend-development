@@ -1,6 +1,60 @@
+"use client";
+
 import { Droplet, Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { useState } from 'react';
+import { toast } from "sonner";
 
 const Footer = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!formData.name || !formData.email) {
+      toast.error("Please fill in all fields");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/send-consultation", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          phone: "Not provided",
+          company: "",
+          email: formData.email,
+          service: "General Inquiry",
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast.success("Request sent successfully! We'll contact you soon.");
+        setFormData({
+          name: "",
+          email: "",
+        });
+      } else {
+        toast.error(data.error || "Failed to send request. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.error("Failed to send request. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <footer className="bg-gradient-to-br from-navy-dark to-slate-blue text-white font-primary">
       <div className="container mx-auto px-6 lg:px-12 py-16 lg:py-24">
@@ -78,22 +132,31 @@ const Footer = () => {
               <p className="text-sm text-white/90 mb-4">
                 Get expert advice on water treatment solutions tailored to your needs.
               </p>
-              <form className="space-y-3">
+              <form className="space-y-3" onSubmit={handleSubmit}>
                 <input 
                   type="text"
                   placeholder="Your Name"
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  disabled={isSubmitting}
+                  required
                   className="w-full h-10 px-4 rounded-md bg-white/5 border border-white/20 text-sm text-white placeholder:text-white/60 focus:ring-1 focus:ring-primary focus:border-primary focus:outline-none transition-all"
                 />
                 <input 
                   type="email"
                   placeholder="Your Email"
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  disabled={isSubmitting}
+                  required
                   className="w-full h-10 px-4 rounded-md bg-white/5 border border-white/20 text-sm text-white placeholder:text-white/60 focus:ring-1 focus:ring-primary focus:border-primary focus:outline-none transition-all"
                 />
                 <button
-                  type="button"
-                  className="w-full h-10 rounded-md bg-primary text-sm font-semibold text-white transition-all duration-300 hover:bg-primary/90 shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30"
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full h-10 rounded-md bg-primary text-sm font-semibold text-white transition-all duration-300 hover:bg-primary/90 shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Submit
+                  {isSubmitting ? "Sending..." : "Submit"}
                 </button>
               </form>
             </div>
